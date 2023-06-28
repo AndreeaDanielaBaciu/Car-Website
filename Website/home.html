@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- For icons in nav -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- For search bar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- For the font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+
+    
+    <title>Dream Car</title>
+
+    
+
+</head>
+
+
+
+
+
+<body>
+    <div class="container">
+
+        <!------------------- THE HEADER ------------------------------>
+        <header class="header">
+            <div class="logo-container">
+            <!-- Logo content goes here -->
+                <img src="images/logo-t.png"  alt="Logo" class="logo"/>
+                <h1> Your Dream Car </h1>
+            </div>
+        </header>
+
+
+        <!------------------- THE NAVIGATION BUTTON FOR MOBILE ------------------------------> 
+        <div class="tablet-nav-only">
+            <ul class="tablet-nav-list">
+                <li><a href="#">Used Cars</a></li>
+                <li><a href="#">New Cars</a></li>
+                <li><a href="#">Sell your car</a></li>
+                <li><a href="#">Value your car</a></li>
+                <li><a href="#">Car Reviews</a></li>
+                <li><a href="#">Car Leasing</a></li>
+                <li><a href="#">Electric Cars</a></li>
+            </ul>
+        </div>
+        
+        <!------------------- THE NAVIGATION BAR ------------------------------>
+
+        <nav class = "navigation">
+            <!-- Navigation menu goes here -->
+            
+                <ul class="nav-list">
+                    <li><a href="#">Used Cars</a></li>
+                    <li><a href="#">New Cars</a></li>
+                    <li><a href="#">Sell your car</a></li>
+                    <li><a href="#">Value your car</a></li>
+                    <li><a href="#">Car Reviews</a></li>
+                    <li><a href="#">Car Leasing</a></li>
+                    <li><a href="#">Electric Cars</a></li>
+                </ul>
+                
+
+                <div class="user-buttons">
+                    <button class="nav-button">
+                        <i class="fas fa-bars"></i>
+                        <a href="#">Nav</a>
+                    </button>
+                    <button class="saved-button">
+                        <i class="fas fa-heart"></i>
+                        <a href="#">Saved</a>
+                    </button>
+                    <button class="account-button">
+                        <i class="fas fa-user"></i>
+                        <a href="signin.html">Sign In</a>
+                    </button>
+                </div>
+        </nav>
+
+        <!------------------- THE TABLET/MOBILE NAVIGATION BAR ------------------------------>
+
+        <nav class = "tablet-mobile-navigation" id="navList">
+            <!-- Navigation menu goes here -->
+            
+                <ul class="tablet-mobile-nav-list">
+                    <li><a href="#">Used Cars</a></li>
+                    <li><a href="#">New Cars</a></li>
+                    <li><a href="#">Sell your car</a></li>
+                    <li><a href="#">Value your car</a></li>
+                    <li><a href="#">Car Reviews</a></li>
+                    <li><a href="#">Car Leasing</a></li>
+                    <li><a href="#">Electric Cars</a></li>
+                </ul>
+        </nav>
+
+
+        <div class="empty"></div>
+        
+
+        <!------------------- THE SEARCH BAR SECTION/DIV ------------------------------>
+        <div class="search-bar">
+            <form class="search-form" action="#" method="get">
+                <input type="text" name="search" placeholder="Search...">
+                <button type="submit" class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div> 
+
+
+        <!------------------- THE ASIDE SECTION ------------------------------>
+        <aside class="aside">
+            <!-- Search functionality goes here -->
+                <h2> Search Your Dream Car </h2>
+                <h3> Make </h3>
+                <div class="search-make">
+                    <select name="make">
+                        <option value="">Select Make </option>
+                        <option value="bmw">BMW</option>
+                        <option value="audi">Audi</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="ford">Ford</option>
+                        <option value="toyota">Toyota</option>
+                    </select>
+                </div>
+                <h3> Model </h3>
+                <div class="search-model">
+                    <select name="model">
+                        <option value="">Select Model</option>
+                        <option value="sedan">Sedan</option>
+                        <option value="suv">SUV</option>
+                        <option value="hatchback">Hatchback</option>
+                    </select>
+                </div>
+                <h3> Engine Size</h3>
+                <div class="search-engine">
+                        <select name="engine-size">
+                            <option value="">Select Engine Size</option>
+                            <option value="1.6">1.6L</option>
+                            <option value="2.0">2.0L</option>
+                            <option value="2.5">2.5L</option>
+                        </select>
+                </div>
+                <h3> Price </h3>
+                <div class="price-range">
+                        <select name="price-min">
+                            <option value="">Min Price</option>
+                            <option value="1000">£1,000</option>
+                            <option value="2000">£2,000</option>
+                            <option value="3000">£3,000</option>
+                            <option value="4000">£4,000</option>
+                            <option value="5000">£5,000</option>
+                            <option value="6000">£6,000</option>
+                            <option value="7000">£7,000</option>
+                            <option value="8000">£8,000</option>
+                            <option value="9000">£9,000</option>
+                            <option value="10000">£10,000</option>
+                            <option value="20000">£20,000</option>
+                            <option value="30000">£30,000</option>
+                        </select>
+                        <select name="price-max">
+                            <option value="">Max Price</option>
+                            <option value="">Min Price</option>
+                            <option value="1000">£1,000</option>
+                            <option value="2000">£2,000</option>
+                            <option value="3000">£3,000</option>
+                            <option value="4000">£4,000</option>
+                            <option value="5000">£5,000</option>
+                            <option value="6000">£6,000</option>
+                            <option value="7000">£7,000</option>
+                            <option value="8000">£8,000</option>
+                            <option value="9000">£9,000</option>
+                            <option value="10000">£10,000</option>
+                            <option value="20000">£20,000</option>
+                            <option value="30000">£30,000</option>
+                            <option value="50000">£50,000</option>
+                            <option value="75000">£75,000</option>
+                            <option value="100000">£100,000</option>
+                        </select>
+            </div>
+            <button type="button" class="search-button"> Search </button>
+        
+        </aside>
+
+
+        <main class="main">
+
+            <!------------------- THE PROMO SECTION ------------------------------>
+
+            <div class="promo-section">
+                <a href="home.html">
+                    <img src="images/promo1.jpg"  alt="Promo Image" class="promo"/>
+                </a>
+            </div>
+
+
+            
+            <!------------------- THE TOPDEALS SECTION ------------------------------>
+
+            <div class="top-deals-section">
+                <h2>Top Deals</h2>
+                <div class="top-deals-container">
+                    <div class="top-deals-scroll">
+                    <a href="#">
+                        <img src="images/XC90.jpg" alt="Top Deal 1">
+                        <span class="car-name-1">XC-90</span>
+                    </a>
+                    <a href="#">
+                        <img src="images/XC60.jpg" alt="Top Deal 2">
+                        <span class="car-name-2">XC-60</span>
+                    </a>
+                    <a href="#">
+                        <img src="images/XC40.jpg" alt="Top Deal 3">
+                        <span class="car-name-3">XC-40</span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!------------------- TOP DEALS FOR TABLET/MOBILE ------------------------------>
+
+            <div class="tablet-mobile-section-top-deals">
+                <h2>Top Deals</h2>
+                <a href="home.html">
+                    <img src="images/V-60-recharge.jpg" alt="Top Deals" />
+                </a>
+            </div>
+
+
+
+            <!------------------- THE RECENTLY ADDED SECTION ------------------------------>
+
+            <div class="recent-section">
+                <h2>Recently added</h2>
+                <div class="recent-container">
+                    <div class="recent-scroll">
+                    <a href="#">
+                        <img src="images/XC-90-recharge.jpg" alt="Recent 1">
+                        <span class="recent-car-name-1">XC-90-Recharge</span>
+                    </a>
+                    <a href="#">
+                        <img src="images/S-60-recharge.jpg" alt="Recent 2">
+                        <span class="recent-car-name-2">S-60-Recharge Volvo</span>
+                    </a>
+                    <a href="#">
+                        <img src="images/V-60-recharge.jpg" alt="Recent 3">
+                        <span class="recent-car-name-3">V-60-recharge</span>
+                    </a>
+                    <a href="#">
+                        <img src="images/V-90-recharge.jpg" alt="Recent 4">
+                        <span class="recent-car-name-4">V-90-recharge</span>
+                    </a>
+                    <a href="#">
+                        <img src="images/XC-60-recharge.jpg" alt="Recent 5">
+                        <span class="recent-car-name-5">XC-60-recharge</span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!------------------- RECENTLY ADDED FOR TABLET/MOBILE  ------------------------------>
+
+            <div class="tablet-mobile-section-recently-added">
+                <h2>Recently Added</h2>
+                <a href="home.html">
+                    <img src="images/XC-60-recharge.jpg" alt="Recently Added" />
+                </a>
+            </div>
+
+
+
+            <!------------------- THE BLOG SECTION ------------------------------>
+
+            <div class="blog-section">
+                    <h2>Blog</h2>
+                    <div class="blog-container">
+                    <article class="blog-post">
+                        <h3>Exploring the Latest BMW Models</h3>
+                        <p>Discover the cutting-edge features and luxurious designs of the latest BMW models. From the sleek and powerful BMW 3 Series to the spacious and versatile BMW X5, we delve into the innovative technology, exceptional performance, and sophisticated craftsmanship that make BMW vehicles stand out. Whether you're a fan of sports cars or SUVs, this blog post will take you on a journey through the exciting world of BMW.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </article>
+                    <article class="blog-post">
+                        <h3>Top 5 Electric Cars for Environment-conscious Drivers</h3>
+                        <p>Are you passionate about both driving and protecting the environment? In this blog post, we present the top five electric cars that cater to environment-conscious drivers. From the sleek Tesla Model S with its impressive range to the practical Nissan Leaf with its affordable price tag, we explore the features, benefits, and eco-friendly aspects of each electric car. Find out which electric vehicle suits your needs and contributes to a greener future.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </article>
+                    <article class="blog-post">
+                        <h3>Tips for Buying a Used Car</h3>
+                        <p>Thinking of purchasing a used car? This blog post provides valuable tips to help you make an informed decision. From researching the vehicle's history to inspecting its condition, we guide you through the essential steps of buying a used car. You'll learn about negotiating the price, checking for potential issues, and ensuring a smooth transaction. With our expert advice, you'll be equipped with the knowledge to confidently navigate the used car market.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </article>
+                    </div>
+            </div>   
+        </main>
+        
+
+        <!------------------- FOOTER ------------------------------>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: contactUs@YourDreamCar.com</p>
+                    <p>Phone: 123-456-7890</p>
+                    <p>Address: 123 Street, Cars City, England</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <div class="rights"> <p>&copy; 2023 Your Dream Car. All rights reserved.</p></div>
+                </div>
+            </div>
+                <div class="footer-section">
+                    <h3>Legal and Other</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Private Policies and Terms</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!------------------- FOR SHOWING THE NAVIGATION LIST WHEN CLICKING THE BARS (TABLET/MOBILE) ------------------------------>
+    <script>
+        const hamburgerIcon = document.querySelector('.fa-bars');
+        const navList = document.getElementById('navList');
+    
+        hamburgerIcon.addEventListener('click', function () {
+            navList.classList.toggle('show');
+        });
+    </script>  
+
+
+</body>
+
+
+
+
+
+</html>
